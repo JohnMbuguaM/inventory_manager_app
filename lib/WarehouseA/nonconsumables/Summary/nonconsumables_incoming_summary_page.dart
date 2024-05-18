@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class NonConsumablesSummaryPage extends StatelessWidget {
+class NonConsumablesIncomingSummaryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Non-Consumable Summary'),
+        title: Text('Non-Consumable Incoming Summary'),
       ),
       body: Center(
         child: DataTable(
@@ -15,8 +15,16 @@ class NonConsumablesSummaryPage extends StatelessWidget {
           ],
           rows: [
             DataRow(cells: [
-              DataCell(Text('Item 1')),
+              DataCell(Text('Hammers')),
               DataCell(Text('50')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Reflectors')),
+              DataCell(Text('200')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Helmets')),
+              DataCell(Text('150')),
             ]),
             //Add more raws as needed
           ],
