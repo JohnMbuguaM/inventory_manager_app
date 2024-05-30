@@ -18,6 +18,7 @@ import 'package:inventory_manager_app/WarehouseA/nonconsumables/Summary/nonconsu
 import 'package:inventory_manager_app/WarehouseA/nonconsumables/non_consumables_detail_page.dart';
 import 'package:inventory_manager_app/WarehouseA/consumables/add_edit_table_content_page.dart';
 import 'package:inventory_manager_app/WarehouseA/Login/registration_screen.dart';
+import 'package:inventory_manager_app/splash_screen.dart';
 
 void main() {
   runApp(InventoryApp());
@@ -48,8 +49,9 @@ class InventoryApp extends StatelessWidget {
         ),
       ),
       title: 'Inventory Management App',
-      initialRoute: '/login',
+      initialRoute: '/splash',
       routes: {
+        '/splash': (context) => SplashScreen(),
         '/login': (context) => LoginScreen(),
         '/home': (context) => InventoryHomePage(),
         '/consumables': (context) => ConsumablesPage(),
